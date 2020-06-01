@@ -1,13 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Net;
-using System.Threading.Tasks;
 using EMAStudySMSWebAPI.Models.Configuration;
 using EMAStudySMSWebAPI.Models.Scheduler;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Options;
 using Twilio;
 using Twilio.Rest.Api.V2010.Account;
@@ -31,7 +26,8 @@ namespace EMAStudySMSWebAPI.Controllers
         }
 
         // POST: api/TwilioIntermediary/SMS_Object
-        //This should get a specific type of object as described in 
+        //This should get a specific type of object as described in AB#10
+        //Implemented in /Models/Schedule/SMS.cs
         [HttpPost]
         public HttpStatusCode Post(SMS sms)
         {

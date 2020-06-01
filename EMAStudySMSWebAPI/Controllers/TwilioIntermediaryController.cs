@@ -34,7 +34,6 @@ namespace EMAStudySMSWebAPI.Controllers
         {
             string status = "Not implemented.";
             return status;
-
         }
     }
 }

@@ -7,5 +7,10 @@
 
   <ItemGroup>
     <Folder Include="Controllers\" />
+    <Folder Include="Models\" />
+    <Folder Include="Models\Configuration\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Twilio" Version="5.42.0" />
   </ItemGroup>
 </Project>

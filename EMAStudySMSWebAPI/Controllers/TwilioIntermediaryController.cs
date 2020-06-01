@@ -26,7 +26,8 @@ namespace EMAStudySMSWebAPI.Controllers
         }
 
         // POST: api/TwilioIntermediary/SMS_Object
-        //This should get a specific type of object as described in 
+        //This should get a specific type of object as described in AB#10
+        //Implemented in /Models/Schedule/SMS.cs
         [HttpPost]
         public HttpStatusCode Post(SMS sms)
         {
